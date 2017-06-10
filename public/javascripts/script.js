@@ -83,7 +83,7 @@ $(document).ready(function(){
 	});
 
 	$.each(events,function(k,v){
-		console.log(v);
+		
 		$(".events").append('<div class="event">\
 			<div class="event-image"></div>\
 			<div class="event-desc">\
