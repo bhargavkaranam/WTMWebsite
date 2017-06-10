@@ -45,8 +45,10 @@ a
 #s3 .text
 {
 	
-	padding: 70px 0 90px 25%;
+	padding: 30px 0 90px 25%;
+	font-family: 'Open Sans',sans-serif;
 }
+
 
 #s5
 {
@@ -63,7 +65,7 @@ a
 }
 #s4
 {
-	background: #212121;
+	background: #FFF;
 	padding: 100px;
 }
 
@@ -244,25 +246,35 @@ form
 	margin-bottom: 14px;
 	background: #EEE;
 	border: none;
+	font-size: 15px;
+	padding-left: 8px;
+	font-family: 'Open Sans',sans-serif;
 }
+
 
 form textarea
 {
 	display: block;
 	width: 360px;
 	height: 120px;
+	font-size: 15px;
+	
+	font-family: 'Open Sans',sans-serif;
 }
 
 #contactFooter
 {
-	bottom: 20px;
+	height: 75px;
+	background: #212121;
+	/*bottom: 20px;*/
+	left: 0;
 	font-family: 'Open Sans',sans-serif
 }
 
 #contactFooter span
 {
-	left: -70px;
-	font-size: 18px;
+	left: 20px;
+	font-size: 20px;
 }
 #contactFooter i
 {
@@ -273,7 +285,7 @@ form textarea
 .event
 {
 	width: 18%;
-	height: 300px;
+	height: 400px;
 	float: left;
 	margin-right: 20px;
 	margin-bottom: 20px;
@@ -283,14 +295,14 @@ form textarea
 .event-image
 {
 	width: 100%;
-	height: 70%;
+	height: 60%;
 	background: #FFF;
 }
 
 .event-desc
 {
 	width: 100%;
-	height: 30%;
+	height: 40%;
 	background: #E0E0E0;
 	padding: 15px;
 	text-align: justify;
@@ -430,27 +442,29 @@ iframe
 
 input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 	font-size: 15px;
-	padding-left: 8px;
+	
 	font-family: 'Open Sans',sans-serif;
 }
 input::-moz-placeholder { /* Firefox 19+ */
 	font-size: 15px;
-	padding-left: 8px;
+	
 	font-family: 'Open Sans',sans-serif;
 }
 input:-ms-input-placeholder { /* IE 10+ */
 	font-size: 15px;
-	padding-left: 8px;
+	
 	font-family: 'Open Sans',sans-serif;
 }
 input:-moz-placeholder { /* Firefox 18- */
 	font-size: 15px;
-	padding-left: 8px;
+	
 	font-family: 'Open Sans',sans-serif;
 }
 textarea
 {
 	padding-left:8px;
+	background: #EEE;
+	border:none;
 }
 textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 	font-size: 15px;
@@ -500,6 +514,65 @@ textarea:-moz-placeholder { /* Firefox 18- */
 .heartbeat{ -webkit-animation-name:heartbeat; -moz-animation-name:heartbeat; -o-animation-name:heartbeat; animation-name:heartbeat; }
 .animate-infinite-heartbeat { -webkit-animation: heartbeat 2s infinite; /* Chrome, Safari, Opera */ animation: heartbeat 2s infinite; }
 
+
+.team-text
+{
+	font-family: 'Open Sans',sans-serif;
+	padding: 40px;
+	text-align: justify;
+	font-size: 20px;
+}
+
+
+
+#s10
+{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/images/QuoteBg1.jpg);
+	background-size: cover;
+	
+	background-position: center center;
+	height: 400px !important;
+	color: #FFF;
+	font-family: 'Roboto',sans-serif;
+	/*text-align: center;*/
+	font-size: 30px;
+	padding: 120px;
+}
+
+#s10 span
+{
+	font-weight: bold;
+}
+
+#s11
+{
+	background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(/images/QuoteBg.jpg);
+	background-size: cover;
+	
+	background-position: center center;
+	height: 400px !important;
+	color: #FFF;
+	font-family: 'Roboto',sans-serif;
+	/*text-align: center;*/
+	font-size: 30px;
+	padding: 120px;
+}
+
+#s11 span
+{
+	font-weight: bold;
+}
+
+#s5 img
+{
+	width: 250px;
+}
+
+.message
+{
+	font-family: 'Open Sans',sans-serif;
+	margin-top: 20px;
+}
 
 @media screen
 and (max-device-width: 800px) {

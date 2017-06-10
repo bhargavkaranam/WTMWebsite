@@ -14,28 +14,28 @@ $(document).ready(function(){
 	var events = [
 	{
 		'name': 'Code in Pajamas',
-		'image': '',
-		'description': '',
+		'image': '/images/CodeInPajamasLogo.png',
+		'description': 'Bi-weekly meet-ups held at the girls’ hostel after college hours.Initiated by our seniors to help us face the campus interviews.',
 	},
 	{
 		'name': 'Code Czarinas',
-		'image': '',
-		'description': '',
+		'image': '/images/CodeCzarinaLogo.png',
+		'description': 'Weekly meet-ups held at the girl’s hostel.Comprises workshops,internship talks and speaker sessions',
 	},
 	{
 		'name': 'CodeBuzz',
-		'image': '',
-		'description': '',
+		'image': '/images/CodeBuzzLogo.png',
+		'description': 'A crash competitive-coding session  held over 10 days,every summer.Girls are mentored over Slack and this is followed by a mini-contest.',
 	},
 	{
 		'name': 'WTM Hub',
-		'image': '',
-		'description': '',
+		'image': '/images/WTMHubLogo.png',
+		'description': 'An interactive session followed by a mini App Contest based on Mad Ads.',
 	},
 	{
 		'name': 'Meetups & Workshops',
-		'image': '',
-		'description': '',
+		'image': '/images/photos/File18.jpeg',
+		'description': 'Workshops are held to introduce the newbies to dev. They cover a range of topics under Front-end web dev, Android Dev and Version Control.',
 	}
 	];
 
@@ -57,7 +57,7 @@ $(document).ready(function(){
 		'name': 'Shubheksha Jalan',
 		'title': 'Manager',
 		'fb': '',
-		'image': '',
+		'image': 'https://scontent.fmaa1-1.fna.fbcdn.net/v/t1.0-9/14192107_10154438239944780_456008402719041222_n.jpg?oh=00a0ba4088dccd10514c9751dea8c54c&oe=59E89111',
 	}
 	];
 
@@ -85,13 +85,13 @@ $(document).ready(function(){
 	$.each(events,function(k,v){
 		
 		$(".events").append('<div class="event">\
-			<div class="event-image"></div>\
+			<div style="background:url(' + v.image + ');background-size: cover;background-repeat:no-repeat;background-position:center center;" class="event-image"></div>\
 			<div class="event-desc">\
 			<div class="event-name">\
 			<h1>' + v.name + '</h1>\
 			</div>\
 			<div class="event-description">\
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit\
+			' + v.description + '\
 			</div>\
 			</div>\
 			</div>\
@@ -123,4 +123,21 @@ $(document).ready(function(){
 			scrollTop: $( $.attr(this, 'href') ).offset().top
 		}, 500);
 	});
+
+
+	$(document).on("click",".wtmDefault",function(ev){
+		ev.preventDefault();
+		$.ajax({
+			url: '/contact',
+			type: 'post',
+			data: 'name=' + $("#name").val() + '&email=' + $("#email").val() + '&message=' + $("#message").val(),
+			dataType: 'json',
+			success: function(data) {
+				
+				data.status ? $(".message").html("We got your message. We'll get back to you shortly. Thank you.") : $(".message").html("Error");
+			}
+		});
+	})
+
+
 });
