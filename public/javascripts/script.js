@@ -1,4 +1,9 @@
+function closeNav() {
+	document.getElementById("mySidenav").style.width = "0";
+}
+
 $(document).ready(function(){
+
 	$(window).scroll(function () {
       //if you hard code, then use console
       //.log to determine when you want the 
@@ -118,6 +123,11 @@ $(document).ready(function(){
 
 	$(document).on('click', 'a', function(event){
 		event.preventDefault();
+		try {
+			document.getElementById("mySidenav").style.width = "0";
+		}catch(err) {
+			
+		}
 
 		$('html, body').animate({
 			scrollTop: $( $.attr(this, 'href') ).offset().top
@@ -139,5 +149,12 @@ $(document).ready(function(){
 		});
 	})
 
+	$(document).on("click",".fa-bars",function(){
+
+		document.getElementById("mySidenav").style.width = "250px";
+
+	})
+
+	
 
 });

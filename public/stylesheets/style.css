@@ -7,6 +7,68 @@ html,body
 	box-sizing: border-box;
 }
 
+
+.clear
+{
+	clear: both;
+}
+
+.fa-bars
+{
+	display: none !important;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 9999; 
+    top: 0;
+    left: 0;
+    background-color: #FFF; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+
+.sidenav li
+{
+
+	list-style-type: none;
+	display: inline-block;
+}
+
+.share-icons
+{
+	position: absolute;
+	bottom: 0;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #212121;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Open Sans',sans-serif;
+    /*text-align: center;*/
+}
+
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #000;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
 #s1
 {
 	background:url(/images/back.jpeg);
@@ -75,6 +137,11 @@ a
 	font-family: 'Open Sans',sans-serif;
 	margin-top: 40px;
 	margin:0 auto;
+}
+
+.fa-bars
+{
+	display: none;
 }
 
 nav
@@ -285,7 +352,7 @@ form textarea
 .event
 {
 	width: 18%;
-	height: 400px;
+	height: 470px;
 	float: left;
 	margin-right: 20px;
 	margin-bottom: 20px;
@@ -306,6 +373,7 @@ form textarea
 	background: #E0E0E0;
 	padding: 15px;
 	text-align: justify;
+	font-family: 'Open Sans',sans-serif;
 }
 .event-desc h1
 {
@@ -574,9 +642,17 @@ textarea:-moz-placeholder { /* Firefox 18- */
 	margin-top: 20px;
 }
 
+.forMobile
+{
+	display: none;
+}
+
 @media screen
 and (max-device-width: 800px) {
-
+	.fa-bars
+	{
+		display: block !important;
+	}
 	nav ul
 	{
 		display: none !important;
@@ -593,5 +669,158 @@ and (max-device-width: 800px) {
 		float: none;
 		width: 70%;
 	}
+
+	#s2
+	{
+		padding: 20px;
+		height: auto !important;
+	}
+	.events
+	{
+		/*padding-left: 40px;*/
+	}
+	#s7
+	{
+		padding: 20px;
+		height: auto !important;
+	}
+	#s7 .text
+	{
+		padding-top: 60px;
+		padding-left: 1px;
+	}
+
+	.achievement
+	{
+		float: none;
+	}
+
+	.achievement .icon
+	{
+		margin-right: 30px;
+	}
+
+	.forDesktop
+	{
+		display: none;
+	}
+	.forMobile
+	{
+		display: block;
+	}
+
+	.forMobile .event
+	{
+		height: 200px;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.forMobile .event-image
+	{
+		text-align: center !important;
+		height: 40%;
+	}
+
+	.forMobile .event-image i
+	{
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.forMobile .event-desc
+	{
+		height: auto;
+		text-align: center;
+		background: transparent;
+
+	}
+
+	#s11
+	{
+		padding: 30px;
+	}
+
+	#s5
+	{
+		padding: 20px 0;
+		height: auto !important;
+	}
+	#s5 .text
+	{
+		padding: 40px 0 0 20px;
+	}
+	#s5 img
+	{
+		height: 140px;
+		width: 140px;
+	}
+
+	#s3
+	{
+		padding: 20px;
+	}
+
+	#s3
+	{
+		height: auto !important;
+	}
+
+	.team
+	{
+		/*display: none;*/
+		width: 40%;
+	}
+
+	#s10
+	{
+		padding: 30px;
+	}
+	#s4
+	{
+		padding: 20px;
+	}
+	form
+	{
+		margin-top: 20px;	
+	}
+
+	.input
+	{
+		width: 290px;
+	}
+	form textarea
+	{
+		width: 290px;
+	}
+	.footerLogo
+	{
+		display: none;
+	}
+	#contactFooter
+	{
+		text-align: center;
+	}
+	.events .event
+	{
+		margin-right: auto;
+		margin-left: auto;
+		height: 460px;
+	}
+	#s3 .text
+	{
+		padding-top: 0px;
+		padding-left: 0;
+	}
+	.team
+	{
+		display: block;
+		margin-left: auto;
+		float: none;
+		margin-right: auto;
+	}
+
 }
 
