@@ -77,6 +77,47 @@ a
 	margin:0 auto;
 }
 
+#s9
+{
+	background-image: url('/images/QuoteBg.jpg');
+	max-height: 350px;
+	height: 100%;
+	background-size: cover;
+	opacity: 0.7;
+	
+
+}
+
+#s9 .text
+{
+	font-size: 40px;
+	opacity: 10;
+	font-family: 'Open Sans',sans-serif;
+
+
+}
+
+#s10
+{
+	background-image: url('/images/QuoteBg1.jpg');
+	max-height: 350px;
+	height: 100%;
+	background-size: cover;
+	
+	
+
+}
+
+#s10 .text
+{
+	font-size: 40px;
+	opacity: 10;
+	font-family: 'Open Sans',sans-serif;
+	color: #ffffff;
+
+
+}
+
 nav
 {
 	height: 85px;
