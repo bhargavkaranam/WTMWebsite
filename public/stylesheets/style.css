@@ -45,7 +45,7 @@ a
 #s3 .text
 {
 	
-	padding: 70px 0;
+	padding: 70px 0 90px 25%;
 }
 
 #s5
@@ -297,7 +297,7 @@ form textarea
 {
 	width: 18%;
 	height: 250px;
-	margin-right: 20px;
+	margin-right: 50px;
 	float: left;
 	
 

@@ -58,18 +58,6 @@ $(document).ready(function(){
 		'title': 'Manager',
 		'fb': '',
 		'image': '',
-	},
-	{
-		'name': 'Sukriti Paul',
-		'title': 'Manager',
-		'fb': '',
-		'image': 'https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/13872670_1191280604245126_6837269989567498239_n.jpg?oh=24cb1381c1e0e158bf4132aab7526585&oe=59D71CB6'
-	},
-	{
-		'name': 'Ileesha Sharma',
-		'title': 'Manager',
-		'fb': '',
-		'image': 'https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/17759875_10208949405275324_4193561411040061194_n.jpg?oh=55fb47ddb5cfa0221cef44aa133bc055&oe=59A87B2D'
 	}
 	];
 
