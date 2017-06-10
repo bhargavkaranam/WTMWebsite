@@ -57,7 +57,7 @@ $(document).ready(function(){
 		'name': 'Shubheksha Jalan',
 		'title': 'Manager',
 		'fb': '',
-		'image': '',
+		'image': 'https://scontent.fmaa1-1.fna.fbcdn.net/v/t1.0-9/14192107_10154438239944780_456008402719041222_n.jpg?oh=00a0ba4088dccd10514c9751dea8c54c&oe=59E89111',
 	}
 	];
 
