@@ -712,10 +712,10 @@ and (max-device-width: 800px) {
 
     #s1
     {
-        background: url(/images/back.jpeg);
+        background: url(/images/back.png);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: left;
+        background-position: center center;
 
     }
 
@@ -751,7 +751,8 @@ and (max-device-width: 800px) {
     }
 
     .achievement {
-        margin-left: -65px;
+        margin-left: -5px;
+        width: 100%;
         /*margin-right: auto;*/
         /*float: none;÷*/
         /*display: block;*/
