@@ -17,9 +17,12 @@ $(document).ready(function () {
         }
     });
 
-
-    $('.parallax-window-1').parallax({imageSrc: '/images/back.jpeg', speed: .3});
-    $('.parallax-window-2').parallax({imageSrc: '/images/QuoteBg.jpg', speed: .3});
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        console.log("mobile");
+    }
+    else
+        $('.parallax-window-1').parallax({imageSrc: '/images/back.jpeg', speed: .3});
+    $('.parallax-window-2').parallax({imageSrc: '/images/QuoteBg.png', speed: .3});
     $('.parallax-window-3').parallax({imageSrc: '/images/QuoteBg1.jpg', speed: .3});
 
 

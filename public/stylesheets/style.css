@@ -710,6 +710,15 @@ and (max-device-width: 800px) {
         display: none;
     }
 
+    #s1
+    {
+        background: url(/images/back.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+
+    }
+
     .event {
         float: none;
         width: 70%;
@@ -719,6 +728,13 @@ and (max-device-width: 800px) {
         padding: 20px;
         height: auto !important;
     }
+
+
+    .about-text {
+        padding: 0;
+        text-align: justify;
+    }
+
 
     .events {
         /*padding-left: 40px;*/
@@ -731,35 +747,38 @@ and (max-device-width: 800px) {
 
     #s7 .text {
         padding-top: 60px;
-        padding-left: 1px;
+        /*padding-left: 1px;*/
     }
 
     .achievement {
-        float: none;
+        margin-left: -65px;
+        /*margin-right: auto;*/
+        /*float: none;÷*/
+        /*display: block;*/
     }
 
     .achievement .icon {
-        margin-right: 30px;
+        /*margin-right: 30px;*/
     }
 
     .forDesktop {
-        display: none;
+        /*display: none;*/
     }
 
     .forMobile {
-        display: block;
+        /*display: block;*/
     }
 
     .forMobile .event {
-        height: 200px;
-        float: none;
+        /*height: 200px;*/
+        /*float: none;*/
         margin-left: auto;
         margin-right: auto;
     }
 
     .forMobile .event-image {
         text-align: center !important;
-        height: 40%;
+        height: 90px;
     }
 
     .forMobile .event-image i {
@@ -785,12 +804,12 @@ and (max-device-width: 800px) {
     }
 
     #s5 .text {
-        padding: 40px 0 0 20px;
+        /*padding: 40px 0 0 20px;*/
     }
 
     #s5 img {
-        height: 140px;
-        width: 140px;
+        /*height: 140px;
+        width: 140px;*/
     }
 
     #s3 {
@@ -811,12 +830,15 @@ and (max-device-width: 800px) {
     }
 
     #s4 {
-        padding: 20px;
+        padding: 0px;
     }
 
     form {
         margin-top: 20px;
+        height: auto;
     }
+
+    
 
     .input {
         width: 290px;
@@ -831,18 +853,28 @@ and (max-device-width: 800px) {
     }
 
     #contactFooter {
+        /*margin-top: 20px;*/
+        position: relative;
+        top: 20px;
+        width: 100%;
         text-align: center;
     }
 
     .events .event {
         margin-right: auto;
         margin-left: auto;
-        height: 460px;
+        /*height: 450px;*/
     }
 
+    .events .event-desc
+    {
+        height: auto;
+    }
+
+
     #s3 .text {
-        padding-top: 0px;
-        padding-left: 0;
+        padding: 0;
+        margin-top: 20px;
     }
 
     .team {
@@ -850,6 +882,11 @@ and (max-device-width: 800px) {
         margin-left: auto;
         float: none;
         margin-right: auto;
+    }
+
+    #s4 .text
+    {
+        padding: 0;
     }
 
 }
