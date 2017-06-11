@@ -49,19 +49,19 @@ $(document).ready(function(){
 	{
 		'name': 'Mehul Smriti Raje',
 		'title': 'Founder',
-		'fb': '',
+		'fb': 'https://www.facebook.com/mehul.s.raje',
 		'image': 'https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/11188184_1626957987551018_4280750234830041851_n.jpg?oh=da3c0d443169e7a3e5d758d1a4cbc46f&oe=59D6009A'
 	},
 	{
 		'name': 'Muskan Gupta',
 		'title': 'Manager',
-		'fb': '',
+		'fb': 'https://www.facebook.com/guskanmupta',
 		'image': 'https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/14591861_1869678003255978_699234978143974107_n.jpg?oh=7e967434a965a271fde4c57aa41110dc&oe=599F129F'
 	},
 	{
 		'name': 'Shubheksha Jalan',
 		'title': 'Manager',
-		'fb': '',
+		'fb': 'https://www.facebook.com/shubheksha.jalan',
 		'image': 'https://scontent.fmaa1-1.fna.fbcdn.net/v/t1.0-9/14192107_10154438239944780_456008402719041222_n.jpg?oh=00a0ba4088dccd10514c9751dea8c54c&oe=59E89111',
 	}
 	];
@@ -112,7 +112,7 @@ $(document).ready(function(){
 			<div class="team-desc">\
 			<h1 class="team-name">' + v.name + '</h1>\
 			<h3 class="team-title">' + v.title + '</h3>\
-			<i class="fa fa-facebook"></i>\
+			<a target="_blank" href="' + v.fb + '"><i class="fa fa-facebook"></i></a>\
 			</div>\
 			</div>');
 	})
@@ -121,12 +121,12 @@ $(document).ready(function(){
 	
 
 
-	$(document).on('click', 'a', function(event){
+	$(document).on('click', '.navItem', function(event){
 		event.preventDefault();
 		try {
 			document.getElementById("mySidenav").style.width = "0";
 		}catch(err) {
-			
+
 		}
 
 		$('html, body').animate({
