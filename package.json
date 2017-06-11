@@ -11,13 +11,10 @@
     "debug": "~2.6.3",
     "email-validator": "^1.0.7",
     "express": "~4.15.2",
-    "fontawesome": "^4.7.2",
-    "fullpage.js": "^2.9.4",
     "jade": "~1.11.0",
     "morgan": "~1.8.1",
     "nodemailer": "^4.0.1",
     "nodemailer-smtp-transport": "^2.7.4",
-    "parallax.js": "^0.1.0",
     "serve-favicon": "~2.4.2"
   }
 }
