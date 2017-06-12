@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var validator = require("email-validator");
-var smtpTransport = require('nodemailer-smtp-transport');
+var ses = require('nodemailer-ses-transport');
 var nodemailer = require('nodemailer');
 var config = require('./config');
 
@@ -12,31 +12,33 @@ router.perform = function(req,res,next) {
 	if(req.body.name && req.body.email && req.body.message) {
 
 		if(validator.validate(req.body.email)) {
-			var transporter = nodemailer.createTransport(smtpTransport({
-				service : 'gmail',
-				auth: {
-					user: config.smtp_credentials.email,
-					pass: config.smtp_credentials.password
-				}
+			var transporter=nodemailer.createTransport(ses({
+				accessKeyId: config.smtp_credentials.access,
+				secretAccessKey: config.smtp_credentials.secret,
+				region: config.smtp_credentials.region
 			}));
 
+			var subject = "Message from contact form";
+
+			var messageToSend = "You got a message from the contact form!<br>" + req.body.name + " sent the following message<br>" + req.body.message + "<br>His email is " + req.body.email; 
 
 
-			transporter.sendMail({
-				from: '' + req.body.email,
-				to: config.smtp_credentials.to,
-				subject: "Message from " + req.body.name,
-				html: 'The following message was sent from the contact form ,<br><a href="mailto:"' +req.body.email + '>' + req.body.email + ' sent the following message<br>' + req.body.message,
-			}, function(error, response) {
-				if (error) 
-				{
-					console.log(error);
-					return res.json({status : false});
-				} 
-				else 
-				{
+			var mailOptions = {
+				from: '"IECSE" <admin@iecsemanipal.com>',
+				to: ['' + config.smtp_credentials.to],
+				subject: subject,
+				html: messageToSend
+			};
 
-					return res.json({status : true});
+			transporter.sendMail(mailOptions, function(error, info) {
+				if (error) {
+
+
+					return res.json({status:false,statusCode:error.statusCode,response:error.message});
+				} else {
+
+
+					return res.json({status:true,statusCode:"200",message:"Message Sent"});
 				}
 			});
 		}

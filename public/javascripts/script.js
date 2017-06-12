@@ -36,7 +36,7 @@ $(document).ready(function () {
         {
             'name': 'Code Czarinas',
             'image': '/images/CodeCzarinaLogo.png',
-            'description': 'Weekly meet-ups held at the girl’s hostel. Comprises workshops, internship talks and speaker sessions',
+            'description': 'Weekly meet-ups held at the girls\' hostel. Comprises workshops, internship talks and speaker sessions',
         },
         {
             'name': 'CodeBuzz',
